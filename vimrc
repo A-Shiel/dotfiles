@@ -14,9 +14,6 @@ Plug 'jiangmiao/auto-pairs'
 " coc autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-" live markdown preview
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-
 call plug#end()
 
 " [basic]
