@@ -1,52 +1,30 @@
 " ~/.vimrc
 
-" [vimplug]
-
-" https://github.com/junegunn/vim-plug
+" [https://github.com/junegunn/vim-plug]
 call plug#begin('~/.vim/autoload')
-
 " file system explorer
 Plug 'scrooloose/nerdtree'
-
 " generate brackets
 Plug 'jiangmiao/auto-pairs'
-
 " coc autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 call plug#end()
 
+" [tabs]
+set tabstop=2         " tab width 
+set expandtab         " tab convert to spaces 
+set shiftwidth=2      " tab set to autoindent spaces
+set smartindent       " auto indentation after brackets
+set expandtab         " tab convert to spaces
+set softtabstop=2     " tab backspacing after tab
+set nowrap            " stop auto formating lines down 
+
 " [basic]
+set number            " set line numbers
+set encoding=utf-8    " default to UTF-8
+set incsearch         " highlight text when searching 
 
-" syntax highlighting
-syntax enable
-
-" set line numbers
-set number
-
-" auto indentation after brackets
-set smartindent
-
-" default to UTF-8
-set encoding=utf-8
-
-" tab width
-set tabstop=4
-
-" tab convert to spaces!
-set expandtab
-
-" tab set to auto-indent spaces
-set shiftwidth=4
-
-" tab backspacing after tab
-set softtabstop=4
-
-" don't auto format lines down
-set nowrap
-
-" highlight text when searching 
-set incsearch
-
+" [visual]
+syntax enable         " syntax highlighting
 " remove line underline from current position
 hi cursorline cterm=NONE
