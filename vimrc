@@ -10,6 +10,9 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
+" [remaps]
+nmap <C-n> :NERDTreeToggle<CR>
+
 " [tabs]
 set tabstop=2         " tab width 
 set expandtab         " tab convert to spaces 
