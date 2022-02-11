@@ -21,5 +21,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 # [alias]
 alias python="python3"
 alias v="vim"
+# automatically compile and execute C++ code
+c() { g++ -o "$1".out "$1".cpp && ./"$1".out; } 
 
 source $ZSH/oh-my-zsh.sh
