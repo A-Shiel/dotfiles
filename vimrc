@@ -12,6 +12,7 @@ call plug#end()
 
 " [remaps]
 nmap <C-n> :NERDTreeToggle<CR>
+set clipboard=unnamed " yank to mac clipboard 
 
 " [tabs]
 set tabstop=2         " tab width 
