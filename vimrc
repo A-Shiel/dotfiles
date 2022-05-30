@@ -26,6 +26,7 @@ set nowrap            " stop auto formating lines down
 set number            " set line numbers
 set encoding=utf-8    " default to UTF-8
 set incsearch         " highlight text when searching 
+set noerrorbells      " no annoying sound
 
 " [visual]
 syntax enable         " syntax highlighting
