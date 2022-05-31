@@ -3,6 +3,8 @@
 # [paths] 
 export PATH=/opt/homebrew/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"	
+export PATH=$PATH:/Users/aden/.spicetify
+export PATH=/opt/homebrew/opt/ruby/bin:$PATH
 
 # [themes] 
 # https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
@@ -27,4 +29,3 @@ alias r="ruby"
 c() { g++ -o "$1".out "$1".cpp && ./"$1".out; } 
 
 source $ZSH/oh-my-zsh.sh
-export PATH=$PATH:/Users/aden/.spicetify
