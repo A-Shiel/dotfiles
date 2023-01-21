@@ -4,14 +4,18 @@ Plug 'scrooloose/nerdtree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'ervandew/supertab'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'lervag/vimtex'
- 
+Plug 'casonadams/walh'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'}
+
 call plug#end()
 
 nmap <C-n> :NERDTreeToggle<CR>
 nmap <C-m> <Plug>MarkdownPreviewToggle
+nmap <c-v> "+p
+vnoremap <c-c> "+y
 
+colo walh-default
 set tabstop=2
 set expandtab
 set shiftwidth=2
