@@ -18,7 +18,7 @@ plugins=(
 
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 alias pbcopy='xsel --clipboard --input'
-alias python="python3"
+alias py="python3"
 alias nf="neofetch --off"
 
 source $ZSH/oh-my-zsh.sh

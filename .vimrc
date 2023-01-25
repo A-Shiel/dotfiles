@@ -28,5 +28,6 @@ set encoding=utf-8
 set incsearch          
 set noerrorbells     
 set backspace=indent,eol,start
+set noswapfile
 
 syntax enable
