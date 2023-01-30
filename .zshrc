@@ -20,6 +20,7 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 alias pbcopy='xsel --clipboard --input'
 alias py="python3"
 alias nf="neofetch --off"
+alias projects="cd /home/aden/Documents/projects"
 
 source $ZSH/oh-my-zsh.sh
 export PATH=$PATH:/home/aden/.cargo/bin
