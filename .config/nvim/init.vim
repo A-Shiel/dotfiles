@@ -5,7 +5,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'ervandew/supertab'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'lervag/vimtex'
-Plug 'casonadams/walh'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'}
 Plug 'aduros/ai.vim'
 Plug 'christoomey/vim-tmux-navigator'
@@ -14,10 +13,7 @@ call plug#end()
 
 nmap <C-n> :NERDTreeToggle<CR>
 nmap <C-m> <Plug>MarkdownPreviewToggle
-nmap <c-v> "+p
-vnoremap <c-c> "+y
 
-colo walh-default
 set tabstop=2
 set expandtab
 set shiftwidth=2

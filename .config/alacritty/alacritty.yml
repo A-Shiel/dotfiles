@@ -9,3 +9,7 @@ font:
 key_bindings:
   - { key: V, mods: Control, action: Paste }
   - { key: C, mods: Control, action: Copy }
+
+colors:
+  primary:
+    background: '0x151515'
