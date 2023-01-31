@@ -1,0 +1,11 @@
+window:
+  padding:
+    x: 15
+    y: 10
+
+font:
+  size: 8
+
+key_bindings:
+  - { key: V, mods: Control, action: Paste }
+  - { key: C, mods: Control, action: Copy }
