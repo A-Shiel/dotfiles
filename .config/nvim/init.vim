@@ -7,6 +7,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'lervag/vimtex'
 Plug 'casonadams/walh'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'}
+Plug 'aduros/ai.vim'
 
 call plug#end()
 
