@@ -8,8 +8,12 @@ Plug 'lervag/vimtex'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'}
 Plug 'aduros/ai.vim'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'NLKNguyen/papercolor-theme'
 
 call plug#end()
+
+set background=dark
+colo PaperColor
 
 nmap <C-n> :NERDTreeToggle<CR>
 nmap <C-m> <Plug>MarkdownPreviewToggle
