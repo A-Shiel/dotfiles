@@ -14,12 +14,7 @@ plugins=(
     zsh-syntax-highlighting
 )
 
-alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
-alias pbcopy='xsel --clipboard --input'
-alias py="python3"
-alias projects="cd /home/aden/Documents/projects"
-alias nv="nvim"
-
+source /home/aden/.aliases
 source $ZSH/oh-my-zsh.sh
 export PATH=$PATH:/home/aden/.cargo/bin
 export PATH=$PATH:~/bin
