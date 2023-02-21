@@ -9,6 +9,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'}
 Plug 'aduros/ai.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'tomtom/tcomment_vim'
 
 call plug#end()
 
@@ -31,5 +32,6 @@ set incsearch
 set noerrorbells     
 set backspace=indent,eol,start
 set noswapfile
+set colorcolumn=80
 
 syntax enable
