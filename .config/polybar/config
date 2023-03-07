@@ -9,8 +9,8 @@ foreground = ${colors.foreground}
 font-0 = "Inconsolata Nerd Font:size=14:style=Regular;4"
 
 modules-left = i3
-modules-center =  
-modules-right = pulseaudio time date backlight battery
+modules-center = 
+modules-right = pulseaudio date time backlight battery
 
 module-margin = 1 
 padding-left = 1
@@ -39,10 +39,10 @@ label-close = ""
 format-spacing = 2
 
 menu-0-0 = reboot
-menu-0-0-exec = sudo reboot 
+menu-0-0-exec = sudo reboot now 
 
 menu-0-1 = poweroff
-menu-0-1-exec = sudo poweroff 
+menu-0-1-exec = sudo shutdown now 
 
 menu-0-2 = suspend
 menu-0-2-exec = systemctl suspend 
