@@ -157,6 +157,7 @@ bindsym $mod+0 workspace number $ws10
 
 # cycle workspaces
 bindsym $mod+Tab workspace next 
+bindsym $mod+Shift+Tab workspace prev
 
 # rename workspaces
 bindsym $mod+w exec i3-input -F "rename workspace to "$(i3-msg -t get_workspaces | jq -r "map(select(.focused))[0].num"):%s"" -P "rename workspace: "
