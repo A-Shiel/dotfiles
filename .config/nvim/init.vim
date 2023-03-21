@@ -10,6 +10,8 @@ Plug 'aduros/ai.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'tomtom/tcomment_vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() }}
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 

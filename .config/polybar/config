@@ -6,10 +6,10 @@ foreground = #ffffff
 height = 30 
 background = ${colors.background}
 foreground = ${colors.foreground}
-font-0 = "Inconsolata Nerd Font:size=14:style=Regular;4"
+font-0 = "Inconsolata Nerd Font Mono:size=14:style=Regular;4"
 
 modules-left = i3
-modules-center = pulseaudio-2 
+modules-center =
 modules-right = pulseaudio-1 date time backlight battery
 
 module-margin = 1 
@@ -53,8 +53,8 @@ menu-0-3-exec = close
 [module/pulseaudio-1]
 type = internal/pulseaudio
 format-volume = <label-volume>
-label-muted = VOL:%percentage% 
-label-volume = VOL:%percentage% 
+label-muted = MUTED:%percentage%%
+label-volume = VOL:%percentage%% 
 click-right = pavucontrol
 interval = 1
 
@@ -191,4 +191,4 @@ type = internal/backlight
 card = intel_backlight
 enable-scroll = true
 format = <label>
-label = BRT:%percentage%
+label = BRT:%percentage%%

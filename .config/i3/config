@@ -78,7 +78,7 @@ bindsym $mod+q kill
 bindsym $mod+space exec --no-startup-id ~/.config/rofi/launch.sh
 
 # open browser/firefox
-bindsym $mod+w exec --no-startup-id firefox
+# bindsym $mod+w exec --no-startup-id firefox
 
 # change focus
 bindsym $mod+h focus left
@@ -155,6 +155,15 @@ bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
+# cycle workspaces
+bindsym $mod+Tab workspace next 
+
+# rename workspaces
+bindsym $mod+w exec i3-input -F "rename workspace to "$(i3-msg -t get_workspaces | jq -r "map(select(.focused))[0].num"):%s"" -P "rename workspace: "
+
+# clear workspace name
+bindsym $mod+Shift+w exec i3-msg "rename workspace to "$(i3-msg -t get_workspaces | jq -r "map(select(.focused))[0].num")""
+
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
@@ -171,7 +180,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
-# suspend system
+# suspend system 
 bindsym $mod+Control+q exec systemctl suspend
 
 # resize window (you can also use the mouse for that)
