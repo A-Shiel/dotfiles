@@ -1,0 +1,52 @@
+#!/bin/zsh
+
+# global color config file
+
+# normal
+export GLOBAL_BACKGROUND="000000"
+export GLOBAL_FOREGROUND="ECEFF1"
+export GLOBAL_BLACK="000000"
+export GLOBAL_RED="E53935"
+export GLOBAL_GREEN="689F38"
+export GLOBAL_YELLOW="F9A825"
+export GLOBAL_BLUE="1E88E5"
+export GLOBAL_MAGENTA="C2185B"
+export GLOBAL_CYAN="0097A7"
+export GLOBAL_WHITE="CFD8DC"
+
+# bright
+export GLOBAL_BR_BLACK="424242"
+export GLOBAL_BR_RED="E57373"
+export GLOBAL_BR_GREEN="AED581"
+export GLOBAL_BR_YELLOW="FFF9C4"
+export GLOBAL_BR_BLUE="64B5F6"
+export GLOBAL_BR_MAGENTA="F8BBD0"
+export GLOBAL_BR_CYAN="E0F7FA"
+export GLOBAL_BR_WHITE="F5F5F5"
+
+
+# alacritty
+sed -i "s/^\( *background: *\).*/\1'0x${GLOBAL_BACKGROUND}'/" personal_theme.yaml
+sed -i "s/^\( *foreground: *\).*/\1'0x${GLOBAL_FOREGROUND}'/" personal_theme.yaml
+
+# bright (write all values)
+sed -i "s/^\( *black: *\).*/\1'0x${GLOBAL_BR_BLACK}'/" personal_theme.yaml
+sed -i "s/^\( *red: *\).*/\1'0x${GLOBAL_BR_RED}'/" personal_theme.yaml
+sed -i "s/^\( *green: *\).*/\1'0x${GLOBAL_BR_GREEN}'/" personal_theme.yaml
+sed -i "s/^\( *yellow: *\).*/\1'0x${GLOBAL_BR_YELLOW}'/" personal_theme.yaml
+sed -i "s/^\( *blue: *\).*/\1'0x${GLOBAL_BR_BLUE}'/" personal_theme.yaml
+sed -i "s/^\( *magenta: *\).*/\1'0x${GLOBAL_BR_MAGENTA}'/" personal_theme.yaml
+sed -i "s/^\( *cyan: *\).*/\1'0x${GLOBAL_BR_CYAN}'/" personal_theme.yaml
+sed -i "s/^\( *white: *\).*/\1'0x${GLOBAL_BR_WHITE}'/" personal_theme.yaml
+
+# normal (replace values between normal and bright)
+sed -i "/^ *normal:/,/^ *bright:/ s/^\( *black: *\).*/\1'0x${GLOBAL_BLACK}'/" personal_theme.yaml
+sed -i "/^ *normal:/,/^ *bright:/ s/^\( *red: *\).*/\1'0x${GLOBAL_RED}'/" personal_theme.yaml
+sed -i "/^ *normal:/,/^ *bright:/ s/^\( *green: *\).*/\1'0x${GLOBAL_GREEN}'/" personal_theme.yaml
+sed -i "/^ *normal:/,/^ *bright:/ s/^\( *yellow: *\).*/\1'0x${GLOBAL_YELLOW}'/" personal_theme.yaml
+sed -i "/^ *normal:/,/^ *bright:/ s/^\( *blue: *\).*/\1'0x${GLOBAL_BLUE}'/" personal_theme.yaml
+sed -i "/^ *normal:/,/^ *bright:/ s/^\( *magenta: *\).*/\1'0x${GLOBAL_MAGENTA}'/" personal_theme.yaml
+sed -i "/^ *normal:/,/^ *bright:/ s/^\( *cyan: *\).*/\1'0x${GLOBAL_CYAN}'/" personal_theme.yaml
+sed -i "/^ *normal:/,/^ *bright:/ s/^\( *white: *\).*/\1'0x${GLOBAL_WHITE}'/" personal_theme.yaml
+
+
