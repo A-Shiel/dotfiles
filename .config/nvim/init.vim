@@ -12,8 +12,11 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'tomtom/tcomment_vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() }}
 Plug 'junegunn/fzf.vim'
+Plug 'lervag/vimtex'
 
 call plug#end()
+
+let g:vimtex_view_method = 'zathura'
 
 set background=dark
 colo PaperColor

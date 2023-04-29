@@ -48,5 +48,3 @@ sed -i "/^ *normal:/,/^ *bright:/ s/^\( *blue: *\).*/\1'0x${GLOBAL_BLUE}'/" pers
 sed -i "/^ *normal:/,/^ *bright:/ s/^\( *magenta: *\).*/\1'0x${GLOBAL_MAGENTA}'/" personal_theme.yaml
 sed -i "/^ *normal:/,/^ *bright:/ s/^\( *cyan: *\).*/\1'0x${GLOBAL_CYAN}'/" personal_theme.yaml
 sed -i "/^ *normal:/,/^ *bright:/ s/^\( *white: *\).*/\1'0x${GLOBAL_WHITE}'/" personal_theme.yaml
-
-
